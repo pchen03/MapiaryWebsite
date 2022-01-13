@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Mapiary</title>
+    <link rel="icon" type="image/svg+xml" sizes="152x150" href="assets/img/logo/favicon.svg">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic">
+    <link rel="stylesheet" href="assets/css/Glacial%20Indifference.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Public+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/typicons/2.0.9/typicons.min.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/Features-Boxed.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/Footer-Dark.css">
+    <link rel="stylesheet" href="assets/css/Full-Height-Hero.css">
+    <link rel="stylesheet" href="assets/css/hexGrid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<!-- preloader -->
+
+<div id="preloader">
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-inner position-relative">
+            <div class="preloader-circle"></div>
+            <div class="preloader-img pere-text">
+                <img src="/assets/img/logo/favicon.svg" alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    const select = (el, all = false) => {
+            el = el.trim()
+            if (all) {
+                return [...document.querySelectorAll(el)]
+            } else {
+                return document.querySelector(el)
+            }
+        }
+        /**
+         * Preloader
+         */
+    let preloader = select('#preloader');
+    if (preloader) {
+        window.addEventListener('load', () => {
+            preloader.remove()
+        });
+    }
+</script>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="57" style="background: #fafafa;">
+    <header class="text-center text-white d-flex masthead" style="overflow: hidden;height: auto;background: linear-gradient(149deg, #ff4b03 0%, rgb(252, 255, 101) 100%);width: 100%;animation: gradient-animation 9s ease infinite;background-size: 500% 500%;min-height: 100%;max-height: auto;">
+        <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav" style="width: 100%;">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="assets/img/logo/mapiary.svg" style="width: 110px;"></a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false"
+                    aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="company/invest.html">Investors</a></li>
+                        <li class="nav-item"><a class="nav-link" href="download.html">Download</a></li>
+                        <li class="nav-item"></li>
+                        <li class="nav-item"><a class="nav-link" href="company/enterprise.html">Mapiary&nbsp; enterprise</a></li>
+                        <li class="nav-item"><a class="nav-link" href="support/support.html">support</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-auto" style="overflow: hidden;">
+            <div class="row flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row" style="overflow: hidden;">
+                <div class="col">
+                    <div class="row">
+                        <div class="col-lg-10 mx-auto">
+                            <h1 class="text-uppercase"><strong style="font-size: 50px;">explore your community</strong></h1>
+                            <hr style="color: #3b2d1b;border: none;">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 30px;">
+                        <div class="col">
+                            <p class="text-faded mb-5" style="color: rgb(255,255,255);font-size: 28.4px;">Search local events, make friends, find your people</p><a class="mx-auto hexButton ribbon-outset border" href="#" style="z-index: 1;">download</a>
+                        </div>
+                    </div>
+                    <div class="row sendlink" style="margin-top: 20px;">
+                        <div class="col d-inline-flex justify-content-sm-center align-items-lg-center" style="padding-right: 0;"><input type="tel" id="downloadnumberinput" style="border-top-left-radius: 10px;border-bottom-left-radius: 10px;margin-left: 20px;padding: 2px 8px;padding-top: 5px;padding-bottom: 5px;padding-left: 10px;height: 56px;" placeholder="Phone Number">
+                            <a class="btn btn-primary text-truncate d-inline-flex btn-xl" role="button" href="#services" style="margin-left: 0;height: 56px;border-radius: 0;border-bottom-right-radius: 10px;border-right-width: 2px;border-top-right-radius: 10px;">invite me!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col text-truncate" style="overflow: hidden;"><img class="img-fluid" src="assets/img/placeholderphone1.png" style="height: 468px;"></div>
+            </div>
+        </div>
+    </header>
+    <section data-aos="fade-up" data-aos-duration="750" data-aos-once="true" id="about" class="bg-primary" style="padding-bottom: 0;">
+        <div class="container">
+            <div class="row flex-column-reverse flex-sm-column-reverse flex-md-row flex-lg-row flex-xl-row flex-xxl-row">
+                <div class="col offset-lg-8 text-center mx-auto"><strong class="text-capitalize" style="color: rgb(255,255,255);font-size: 38px;">discover</strong>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">join groups with your interests and connect with friends in your community<br></p><a class="btn btn-light btn-xl" role="button" href="#services">download</a>
+                </div>
+                <div class="col d-flex d-lg-flex justify-content-center align-items-center align-content-center mx-auto justify-content-lg-center"><img class="placeholder" src="assets/img/placeholderphone1.png" style="height: 399px;margin: auto;"></div>
+            </div>
+            <div class="row flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row" style="padding-top: 30px;padding-bottom: 30px;">
+                <div class="col d-flex d-lg-flex justify-content-center align-items-center align-content-center mx-auto justify-content-lg-center"><img class="placeholder" src="assets/img/placeholderphone1.png" style="height: 399px;margin: auto;"></div>
+                <div class="col offset-lg-8 text-center mx-auto"><strong class="text-capitalize" style="color: rgb(255,255,255);font-size: 38px;"><br>share<br></strong>
+                    <p class="text-faded mb-4"></p>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">Check for . Worried about privacy?</p><a class="btn btn-light btn-xl" role="button" href="#services">download</a>
+                </div>
+            </div>
+            <div class="row flex-column-reverse flex-sm-column-reverse flex-md-row flex-lg-row flex-xl-row flex-xxl-row">
+                <div class="col offset-lg-8 text-center mx-auto"><strong class="text-capitalize" style="color: rgb(255,255,255);font-size: 38px;">connect</strong>
+                    <hr class="light my-4">
+                    <p class="text-faded mb-4">From group calendars to group notifications, stay connected with your friends and be prepared for events together</p><a class="btn btn-light btn-xl" role="button" href="#services">download</a>
+                </div>
+                <div class="col d-flex d-lg-flex justify-content-center align-items-center align-content-center mx-auto justify-content-lg-center"><img class="placeholder" src="assets/img/placeholderphone1.png" style="height: 399px;margin: auto;"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+
+    <div style=" overflow: hidden;background-color:#fafafa">
+        <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="height: 10%; width: 100%;">
+    <path d="M0,35
+             C150,80 400,20 500,45 
+             L500.00,0.00
+             L0.00,0.00 Z" style="stroke: none;fill: #f05f40;"></path>
+  </svg>
+    </div>
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" id="services" style="padding-top: 0;padding-bottom: 0;background: #fafafa;width: 100%;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="text-capitalize text-center" style="font-family:glacBold">your privacy our priority</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fas fa-search-location fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-once="true"></i>
+                        <h3 class="text-capitalize mb-3">Set A Custom Location</h3>
+                        <p class="text-muted mb-0">Our templates are updated regularly so they don't break.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><i class="fa fa-lock fa-4x text-primary mb-3 sr-icons" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="200" data-aos-once="true"></i>
+                        <h3 class="text-capitalize mb-3">Encrypted Transactions</h3>
+                        <p class="text-muted mb-0">You can use this theme as is, or you can make changes!</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="mx-auto service-box mt-5"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" data-aos="zoom-in" data-aos-duration="200" data-aos-delay="400" data-aos-once="true" class="fa-4x text-primary mb-3 sr-icons">
+
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.16611 4.99891C5.17437 4.95809 7.91528 3.81033 10 1.94446C12.0847 3.81033 14.8256 4.95809 17.8339 4.99891C17.9431 5.64968 18 6.31821 18 7.00003C18 12.2249 14.6608 16.6698 10 18.3172C5.33923 16.6698 2 12.2249 2 7.00003C2 6.31821 2.05686 5.64968 2.16611 4.99891ZM13.7071 8.70711C14.0976 8.31658 14.0976 7.68342 13.7071 7.29289C13.3166 6.90237 12.6834 6.90237 12.2929 7.29289L9 10.5858L7.70711 9.29289C7.31658 8.90237 6.68342 8.90237 6.29289 9.29289C5.90237 9.68342 5.90237 10.3166 6.29289 10.7071L8.29289 12.7071C8.68342 13.0976 9.31658 13.0976 9.70711 12.7071L13.7071 8.70711Z" fill="currentColor"></path>
+                        </svg>
+                        <h3 class="text-capitalize mb-3">Shielded Data Storage</h3>
+                        <p class="text-muted mb-0">We update dependencies to keep things fresh.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 text-center">
+                    <div class="service-box mt-5"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" data-aos="fade" data-aos-duration="200" data-aos-delay="600" data-aos-once="true" class="fa-4x text-primary mb-3 sr-icons">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M18 8C18 11.3137 15.3137 14 12 14C11.3938 14 10.8087 13.9101 10.2571 13.7429L10 14L9 15L8 16H6V18H2V14L6.25707 9.74293C6.08989 9.19135 6 8.60617 6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8ZM12 4C11.4477 4 11 4.44772 11 5C11 5.55228 11.4477 6 12 6C13.1046 6 14 6.89543 14 8C14 8.55228 14.4477 9 15 9C15.5523 9 16 8.55228 16 8C16 5.79086 14.2091 4 12 4Z" fill="currentColor"></path>
+                        </svg>
+                        <h3 class="text-capitalize mb-3">Secured Messaging</h3>
+                        <p class="text-muted mb-0">You have to make your websites with love these days!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+
+    <div style=" overflow: hidden;background-color:#212529">
+        <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="height: 10%; width: 100%;">
+    <path d="M0,35
+             C150,80 400,20 500,45 
+             L500.00,0.00
+             L0.00,0.00 Z" style="stroke: none;fill: #fafafa;"></path>
+  </svg>
+    </div>
+    <section class="text-white bg-dark" style="background: #212529;padding-top: 0;padding-bottom: 0;z-index: -2;">
+        <div class="container text-center">
+            <h2 class="text-capitalize mb-4">meet new friends with your hobbies</h2>
+            <p>From academic interests to sports, find people who share your interests using our filter option</p>
+            <div class="mx-auto" style="width: 100%;">
+                <div class="simple-slider mobileFullWidth" style="width: 100%;">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h1 class="text-capitalize" style="margin-bottom: 30px;">hackathons</h1><img class="img-fluid mobileFullWidth" src="assets/img/home/slide1.jpg" width="100%" style="overflow: hidden;height: 85%;border-radius: 50px;" height="20px">
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="text-capitalize" style="margin-bottom: 30px;">hackathons</h1><img class="img-fluid mobileFullWidth" src="assets/img/home/slide1.jpg" width="100%" style="overflow: hidden;height: 85%;border-radius: 50px;" height="20px">
+                            </div>
+                            <div class="swiper-slide">
+                                <h1 class="text-capitalize" style="margin-bottom: 30px;">hackathons</h1><img class="img-fluid mobileFullWidth" src="assets/img/home/slide1.jpg" width="100%" style="overflow: hidden;height: 85%;border-radius: 50px;" height="20px">
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-prev" style="color: #ffad23;"></div>
+                        <div class="swiper-button-next" style="color: #ffad23;"></div>
+                    </div>
+                </div>
+            </div><a class="mx-auto hexButton ribbon-outset border" href="#" style="z-index: 0;margin-top: 50px;">download</a>
+        </div>
+    </section>
+    <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+
+    <div style=" overflow: hidden;background-color:#fafafa">
+        <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="height: 10%; width: 100%;">
+    <path d="M0,35
+             C150,80 400,20 500,45 
+             L500.00,0.00
+             L0.00,0.00 Z" style="stroke: none;fill: #212529;"></path>
+  </svg>
+    </div>
+    <section data-aos="fade-up" data-aos-duration="700" data-aos-once="true" style="background: #fafafa;padding-top: 0;padding-bottom: 0;">
+        <h1 class="text-capitalize text-center" style="margin-bottom: 30px;">organizer friendly</h1>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center"><img class="mobileBottomMargin" src="assets/img/placeholderphone1.png" style="height: 388px;"></div>
+                <div class="col-md-6 my-auto">
+                    <h1 class="text-capitalize text-center lrPadding">Erase the hassle of fundraising and donating</h1>
+                    <p class="text-center">Low fees and easy tracking</p>
+                </div>
+            </div>
+            <div class="row flex-column-reverse flex-sm-column-reverse flex-md-row flex-lg-row flex-xl-row flex-xxl-row" style="margin-top: 30px;margin-bottom: 30px;">
+                <div class="col-md-6 my-auto">
+                    <h1 class="text-capitalize text-center lrPadding">public and private events</h1>
+                    <p class="text-center">choose who you want to invite</p>
+                </div>
+                <div class="col-md-6 d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center"><img class="mobileBottomMargin" src="assets/img/placeholderphone1.png" style="height: 388px;"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 d-flex d-sm-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center"><img class="mobileBottomMargin" src="assets/img/placeholderphone1.png" style="height: 388px;"></div>
+                <div class="col-md-6 my-auto" style="z-index: 0;">
+                    <h1 class="text-capitalize text-center lrPadding">tickets and attendance</h1>
+                    <p class="text-center">sell tickets, take attendance, track attendees from one simple application</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="d-flex d-lg-flex justify-content-center justify-content-lg-center" style="padding-top: 50px;background: #fafafa;z-index: 0;"><a class="mx-auto hexButton ribbon-outset border" href="#" style="z-index: 1;">download</a></div>
+    <!-- Generated by https://smooth.ie/blogs/news/svg-wavey-transitions-between-sections -->
+
+    <div style=" overflow: hidden;background-color:var(--footercolor)">
+        <svg viewBox="0 0 500 100" preserveAspectRatio="none" style="height: 10%; width: 100%;">
+    <path d="M0,50
+             C150,80 200,90 500,50 
+             L500.00,0.00
+             L0.00,0.00 Z" style="stroke: none;fill: #fafafa;"></path>
+  </svg>
+    </div>
+    <footer class="footer-dark" style="background: var(--footercolor);padding-bottom: 10px;padding-top: 0;">
+        <div class="mx-auto" style="margin-bottom: 30px;">
+            <h1 class="text-center">Try it out</h1>
+            <div class="d-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-lg-center"><img src="assets/img/google-play-badge.png" style="height: 60px;"><img src="assets/img/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.svg"></div>
+        </div>
+        <div class="container">
+            <div class="row d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="footerheader">Privacy</h3>
+                    <ul class="footerlink" style="border-color: #f0f9ff;">
+                        <li><a href="privacy/termsofservice.html">Terms of Service</a></li>
+                        <li><a href="privacy/privacypolicy.html">Privacy Policy</a></li>
+                        <li><a href="privacy/cookies.html">Cookies</a></li>
+                        <li><a href="privacy/locationinformation.html">Location Information</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="footerheader">Company</h3>
+                    <ul>
+                        <li style="border-color: rgb(0,0,0);color: rgb(255,255,255);"><a href="#">Mapiary Enterprise</a></li>
+                        <li><a class="text-capitalize" href="#">Advertise with us</a></li>
+                        <li><a class="text-capitalize" href="#">our team</a></li>
+                        <li><a class="text-capitalize" href="#">careers</a></li>
+                        <li><a class="text-capitalize" href="#">News</a></li>
+                        <li><a class="text-capitalize" href="#">Investors</a></li>
+                        <li><a class="text-capitalize" href="support/contact.html">contact us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="footerheader">Community</h3>
+                    <ul class="footerlink">
+                        <li><a href="support/guidelines.html">Guidelines</a></li>
+                        <li><a href="support/support.html">Support</a></li>
+                        <li><a href="support/helpcenter.html">Help Center</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div style="bottom: 0px;padding-bottom: 20px;overflow: hidden;">
+            <p class="copyright" style="margin-bottom: 12px;">Mapiary © 2021</p>
+            <ul class="list-inline text-center">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="company/about.html">About</a></li>
+                <li class="list-inline-item"><a href="privacy/termsofservice.html">Terms</a></li>
+                <li class="list-inline-item"><a href="privacy/privacypolicy.html">Privacy Policy</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/creative.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/hexGrid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.4.8/swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>
